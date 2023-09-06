@@ -35,34 +35,34 @@ public class Formulario extends javax.swing.JFrame {
         EtiquetaC = new javax.swing.JLabel();
         InC = new javax.swing.JTextField();
         BotClear = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JSeparator();
         BotMas = new javax.swing.JButton();
         BotMenos = new javax.swing.JButton();
         BotMul = new javax.swing.JButton();
         BotDiv = new javax.swing.JButton();
-        EtiquetaE = new javax.swing.JLabel();
         BotV = new javax.swing.JButton();
         BotR = new javax.swing.JButton();
         BotI = new javax.swing.JButton();
-        EtiquetaP = new javax.swing.JLabel();
         BotA = new javax.swing.JButton();
         BotB = new javax.swing.JButton();
         BotC = new javax.swing.JButton();
         BotConcat = new javax.swing.JButton();
-        jSeparator3 = new javax.swing.JSeparator();
-        BotCerrar = new javax.swing.JButton();
         UnidadA = new javax.swing.JLabel();
         UnidadB = new javax.swing.JLabel();
         UnidadC = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TP Calculadora");
+        setResizable(false);
 
         java.awt.GridBagLayout panelPpalLayout = new java.awt.GridBagLayout();
-        panelPpalLayout.columnWidths = new int[] {96, 96, 96, 96};
+        panelPpalLayout.columnWidths = new int[] {64, 64, 64, 64, 16, 64, 64};
         panelPpal.setLayout(panelPpalLayout);
 
-        EtiquetaA.setText("Valor A:");
+        EtiquetaA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaA.setText("A =");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -70,6 +70,7 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(EtiquetaA, gridBagConstraints);
 
+        InA.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         InA.setToolTipText("");
         InA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,7 +85,8 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(InA, gridBagConstraints);
 
-        EtiquetaB.setText("Valor B:");
+        EtiquetaB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaB.setText("B =");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -92,7 +94,7 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(EtiquetaB, gridBagConstraints);
 
-        InB.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        InB.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
@@ -101,7 +103,8 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(InB, gridBagConstraints);
 
-        EtiquetaC.setText("Valor C:");
+        EtiquetaC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaC.setText("C =");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -109,7 +112,7 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(EtiquetaC, gridBagConstraints);
 
-        InC.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        InC.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -125,19 +128,13 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 9;
-        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.gridheight = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotClear, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 4;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.insets = new java.awt.Insets(8, 2, 8, 2);
-        panelPpal.add(jSeparator1, gridBagConstraints);
 
         BotMas.setText("+");
         BotMas.addActionListener(new java.awt.event.ActionListener() {
@@ -191,21 +188,16 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotDiv, gridBagConstraints);
 
-        EtiquetaE.setText("Electronica:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
-        panelPpal.add(EtiquetaE, gridBagConstraints);
-
         BotV.setText("V");
+        BotV.setToolTipText("<html>\n<b>Calcular Voltaje</b>\n<ul>\n<li>B = Resistencia (ohms)</li>\n<li>C = Corriente (ampers)</li>\n</ul>\n</html>");
         BotV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotVActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotV, gridBagConstraints);
@@ -217,7 +209,8 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 1;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotR, gridBagConstraints);
@@ -229,18 +222,11 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotI, gridBagConstraints);
-
-        EtiquetaP.setText("Pitagoras");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 6;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
-        panelPpal.add(EtiquetaP, gridBagConstraints);
 
         BotA.setText("A");
         BotA.addActionListener(new java.awt.event.ActionListener() {
@@ -249,8 +235,8 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotA, gridBagConstraints);
@@ -262,8 +248,8 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 1;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotB, gridBagConstraints);
@@ -275,8 +261,8 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotC, gridBagConstraints);
@@ -288,27 +274,15 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 4;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotConcat, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 8;
-        gridBagConstraints.gridwidth = 4;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.insets = new java.awt.Insets(8, 2, 8, 2);
-        panelPpal.add(jSeparator3, gridBagConstraints);
 
-        BotCerrar.setText("Cerrar");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 9;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
-        panelPpal.add(BotCerrar, gridBagConstraints);
-
+        UnidadA.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        UnidadA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         UnidadA.setText("a");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -317,6 +291,8 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(UnidadA, gridBagConstraints);
 
+        UnidadB.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        UnidadB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         UnidadB.setText("b");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -325,6 +301,8 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(UnidadB, gridBagConstraints);
 
+        UnidadC.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        UnidadC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         UnidadC.setText("c");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -332,6 +310,32 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(UnidadC, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(8, 2, 8, 2);
+        panelPpal.add(jSeparator1, gridBagConstraints);
+
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridheight = 6;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        panelPpal.add(jSeparator2, gridBagConstraints);
+
+        jLabel1.setFont(new java.awt.Font("Liberation Mono", 0, 10)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("TAS - Programacion III - Ismael Tolaba");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(8, 2, 2, 2);
+        panelPpal.add(jLabel1, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -339,15 +343,14 @@ public class Formulario extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelPpal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(panelPpal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelPpal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(panelPpal, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE))
         );
 
         pack();
@@ -363,7 +366,7 @@ public class Formulario extends javax.swing.JFrame {
         InB.setText("");
         InC.setText("");
         
-        indicarUnidades("","","");
+        indicarUnidades("...","...","...");
     }//GEN-LAST:event_BotClearActionPerformed
 
     private void BotMasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotMasActionPerformed
@@ -481,7 +484,7 @@ public class Formulario extends javax.swing.JFrame {
       InA.setText("Error");
     }
     
-    indicarUnidades("Volts", "Ohms", "Ampers");
+    indicarUnidades("V", "Ω", "A");
   }//GEN-LAST:event_BotVActionPerformed
 
   private void BotRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotRActionPerformed
@@ -509,7 +512,7 @@ public class Formulario extends javax.swing.JFrame {
       InB.setText("Error");
     }
     
-    indicarUnidades("Volts", "Ohms", "Amperes");
+    indicarUnidades("V", "Ω", "A");
   }//GEN-LAST:event_BotRActionPerformed
 
     private void BotIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotIActionPerformed
@@ -537,7 +540,7 @@ public class Formulario extends javax.swing.JFrame {
           InB.setText("Error");
         }
 
-        indicarUnidades("Volts", "Ohms", "Amperes");
+        indicarUnidades("V", "Ω", "A");
     }//GEN-LAST:event_BotIActionPerformed
 
     private void BotAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotAActionPerformed
@@ -616,7 +619,6 @@ public class Formulario extends javax.swing.JFrame {
     private javax.swing.JButton BotA;
     private javax.swing.JButton BotB;
     private javax.swing.JButton BotC;
-    private javax.swing.JButton BotCerrar;
     private javax.swing.JButton BotClear;
     private javax.swing.JButton BotConcat;
     private javax.swing.JButton BotDiv;
@@ -629,16 +631,15 @@ public class Formulario extends javax.swing.JFrame {
     private javax.swing.JLabel EtiquetaA;
     private javax.swing.JLabel EtiquetaB;
     private javax.swing.JLabel EtiquetaC;
-    private javax.swing.JLabel EtiquetaE;
-    private javax.swing.JLabel EtiquetaP;
     private javax.swing.JTextField InA;
     private javax.swing.JTextField InB;
     private javax.swing.JTextField InC;
     private javax.swing.JLabel UnidadA;
     private javax.swing.JLabel UnidadB;
     private javax.swing.JLabel UnidadC;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JPanel panelPpal;
     // End of variables declaration//GEN-END:variables
 }
