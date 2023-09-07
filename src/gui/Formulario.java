@@ -121,7 +121,7 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(InC, gridBagConstraints);
 
-        BotClear.setText("C");
+        BotClear.setText("Limpiar");
         BotClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotClearActionPerformed(evt);
@@ -189,7 +189,7 @@ public class Formulario extends javax.swing.JFrame {
         panelPpal.add(BotDiv, gridBagConstraints);
 
         BotV.setText("V");
-        BotV.setToolTipText("<html>\n<b>Calcular Voltaje</b>\n<ul>\n<li>B = Resistencia (ohms)</li>\n<li>C = Corriente (ampers)</li>\n</ul>\n</html>");
+        BotV.setToolTipText("<html>\n<b>Calcular Voltaje</b>\n<ul>\n<li>A = Voltaje (voltios)</li>\n<li>B = Resistencia (ohmios)</li>\n<li>C = Corriente (amperios)</li>\n</ul>\n</html>");
         BotV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotVActionPerformed(evt);
@@ -203,6 +203,7 @@ public class Formulario extends javax.swing.JFrame {
         panelPpal.add(BotV, gridBagConstraints);
 
         BotR.setText("R");
+        BotR.setToolTipText("<html>\n<b>Calcular Resistencia</b>\n<ul>\n<li>A = Voltaje (voltios)</li>\n<li>B = Resistencia (ohmios)</li>\n<li>C = Corriente (amperios)</li>\n</ul>\n</html>");
         BotR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotRActionPerformed(evt);
@@ -216,6 +217,7 @@ public class Formulario extends javax.swing.JFrame {
         panelPpal.add(BotR, gridBagConstraints);
 
         BotI.setText("I");
+        BotI.setToolTipText("<html>\n<b>Calcular Corriente</b>\n<ul>\n<li>A = Voltaje (voltios)</li>\n<li>B = Resistencia (ohmios)</li>\n<li>C = Corriente (amperios)</li>\n</ul>\n</html>");
         BotI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotIActionPerformed(evt);
@@ -229,6 +231,7 @@ public class Formulario extends javax.swing.JFrame {
         panelPpal.add(BotI, gridBagConstraints);
 
         BotA.setText("A");
+        BotA.setToolTipText("<html>\n<b>Calcular Cateto</b>\n<ul>\n<li>A = Cateto A</li>\n<li>B = Cateto B</li>\n<li>C = Hipotenusa</li>\n</ul>\n</html>");
         BotA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotAActionPerformed(evt);
@@ -242,6 +245,7 @@ public class Formulario extends javax.swing.JFrame {
         panelPpal.add(BotA, gridBagConstraints);
 
         BotB.setText("B");
+        BotB.setToolTipText("<html>\n<b>Calcular Cateto</b>\n<ul>\n<li>A = Cateto A</li>\n<li>B = Cateto B</li>\n<li>C = Hipotenusa</li>\n</ul>\n</html>");
         BotB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotBActionPerformed(evt);
@@ -254,7 +258,8 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotB, gridBagConstraints);
 
-        BotC.setText("C");
+        BotC.setText("H");
+        BotC.setToolTipText("<html>\n<b>Calcular Hipotenusa</b>\n<ul>\n<li>A = Cateto A</li>\n<li>B = Cateto B</li>\n<li>C = Hipotenusa</li>\n</ul>\n</html>");
         BotC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotCActionPerformed(evt);
@@ -281,9 +286,9 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(BotConcat, gridBagConstraints);
 
-        UnidadA.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        UnidadA.setFont(new java.awt.Font("Liberation Sans", 1, 12)); // NOI18N
         UnidadA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        UnidadA.setText("a");
+        UnidadA.setText("...");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 0;
@@ -291,9 +296,9 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(UnidadA, gridBagConstraints);
 
-        UnidadB.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        UnidadB.setFont(new java.awt.Font("Liberation Sans", 1, 12)); // NOI18N
         UnidadB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        UnidadB.setText("b");
+        UnidadB.setText("...");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 1;
@@ -301,9 +306,9 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         panelPpal.add(UnidadB, gridBagConstraints);
 
-        UnidadC.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        UnidadC.setFont(new java.awt.Font("Liberation Sans", 1, 12)); // NOI18N
         UnidadC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        UnidadC.setText("c");
+        UnidadC.setText("...");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 2;
@@ -334,7 +339,7 @@ public class Formulario extends javax.swing.JFrame {
         gridBagConstraints.gridy = 7;
         gridBagConstraints.gridwidth = 7;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new java.awt.Insets(8, 2, 2, 2);
+        gridBagConstraints.insets = new java.awt.Insets(8, 2, 0, 2);
         panelPpal.add(jLabel1, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -343,14 +348,15 @@ public class Formulario extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelPpal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelPpal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelPpal, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE))
+                .addComponent(panelPpal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -362,11 +368,16 @@ public class Formulario extends javax.swing.JFrame {
 
     private void BotClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotClearActionPerformed
         // Limpiar campos
+        String valA = InA.getText(), valB = InB.getText();
         InA.setText("");
         InB.setText("");
         InC.setText("");
         
         indicarUnidades("...","...","...");
+        
+        if("o".equals(valA) && "o".equals(valB)){
+            InC.setText("o-limpiadas");
+        }
     }//GEN-LAST:event_BotClearActionPerformed
 
     private void BotMasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotMasActionPerformed
@@ -387,7 +398,11 @@ public class Formulario extends javax.swing.JFrame {
         InC.setText("Error");
       }
       
-      indicarUnidades("", "", "");
+      indicarUnidades("...", "...", "...");
+      
+      if("mago".equals(InA.getText()) && "comer".equals(InB.getText())) {
+          InC.setText("magordito");
+      }
     }//GEN-LAST:event_BotMasActionPerformed
 
   private void BotMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotMenosActionPerformed
@@ -408,7 +423,11 @@ public class Formulario extends javax.swing.JFrame {
       InC.setText("Error");
     }
     
-    indicarUnidades("", "", "");
+    indicarUnidades("...", "...", "...");
+    
+    if("septiembre".equals(InA.getText()) && "tu".equals(InB.getText())) {
+        InC.setText("sepembre");
+    }
   }//GEN-LAST:event_BotMenosActionPerformed
 
   private void BotMulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotMulActionPerformed
@@ -429,7 +448,7 @@ public class Formulario extends javax.swing.JFrame {
       InC.setText("Error");
     }
     
-    indicarUnidades("", "", "");
+    indicarUnidades("...", "...", "...");
   }//GEN-LAST:event_BotMulActionPerformed
 
   private void BotDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotDivActionPerformed
@@ -454,13 +473,25 @@ public class Formulario extends javax.swing.JFrame {
       InC.setText("Error");
     }
     
-    indicarUnidades("", "", "");
+    indicarUnidades("...", "...", "...");
+    
+    if("Metallica".equals(InA.getText())) {
+        InB.setText("Metallica");
+        InC.setText("Megadeath");
+    }
   }//GEN-LAST:event_BotDivActionPerformed
 
   private void BotConcatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotConcatActionPerformed
     /* Concatenar A y B en C */
     InC.setText(InA.getText() + InB.getText());
-    indicarUnidades("", "", "");
+    indicarUnidades("...", "...", "...");
+    
+    if("Ismael".equals(InA.getText()) && "Tolaba".equals(InB.getText())) {
+        InC.setText("El programador");
+    }
+    if("Emanuel".equals(InA.getText()) && "Rodríguez".equals(InB.getText())) {
+        InC.setText("El profesor");
+    }
   }//GEN-LAST:event_BotConcatActionPerformed
 
   private void BotVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotVActionPerformed
@@ -559,6 +590,8 @@ public class Formulario extends javax.swing.JFrame {
             
             InA.setText(String.valueOf(ValA));
         }
+        
+        indicarUnidades("...", "...", "...");
     }//GEN-LAST:event_BotAActionPerformed
 
     private void BotBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotBActionPerformed
@@ -577,6 +610,8 @@ public class Formulario extends javax.swing.JFrame {
             
             InB.setText(String.valueOf(ValB));
         }
+        
+        indicarUnidades("...", "...", "...");
     }//GEN-LAST:event_BotBActionPerformed
 
     private void BotCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotCActionPerformed
@@ -595,6 +630,8 @@ public class Formulario extends javax.swing.JFrame {
             
             InC.setText(String.valueOf(ValC));
         }
+        
+        indicarUnidades("...", "...", "...");
     }//GEN-LAST:event_BotCActionPerformed
     
   public static boolean isNumeric(String strNum) {

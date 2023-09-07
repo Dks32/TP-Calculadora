@@ -27,7 +27,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="panelPpal" min="-2" max="-2" attributes="0"/>
+              <Component id="panelPpal" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -36,7 +36,8 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="panelPpal" pref="174" max="32767" attributes="0"/>
+              <Component id="panelPpal" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -113,7 +114,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="BotClear">
           <Properties>
-            <Property name="text" type="java.lang.String" value="C"/>
+            <Property name="text" type="java.lang.String" value="Limpiar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotClearActionPerformed"/>
@@ -179,7 +180,7 @@
         <Component class="javax.swing.JButton" name="BotV">
           <Properties>
             <Property name="text" type="java.lang.String" value="V"/>
-            <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Calcular Voltaje&lt;/b&gt;&#xa;&lt;ul&gt;&#xa;&lt;li&gt;B = Resistencia (ohms)&lt;/li&gt;&#xa;&lt;li&gt;C = Corriente (ampers)&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Calcular Voltaje&lt;/b&gt;&#xa;&lt;ul&gt;&#xa;&lt;li&gt;A = Voltaje (voltios)&lt;/li&gt;&#xa;&lt;li&gt;B = Resistencia (ohmios)&lt;/li&gt;&#xa;&lt;li&gt;C = Corriente (amperios)&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;/html&gt;"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotVActionPerformed"/>
@@ -193,6 +194,7 @@
         <Component class="javax.swing.JButton" name="BotR">
           <Properties>
             <Property name="text" type="java.lang.String" value="R"/>
+            <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Calcular Resistencia&lt;/b&gt;&#xa;&lt;ul&gt;&#xa;&lt;li&gt;A = Voltaje (voltios)&lt;/li&gt;&#xa;&lt;li&gt;B = Resistencia (ohmios)&lt;/li&gt;&#xa;&lt;li&gt;C = Corriente (amperios)&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;/html&gt;"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotRActionPerformed"/>
@@ -206,6 +208,7 @@
         <Component class="javax.swing.JButton" name="BotI">
           <Properties>
             <Property name="text" type="java.lang.String" value="I"/>
+            <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Calcular Corriente&lt;/b&gt;&#xa;&lt;ul&gt;&#xa;&lt;li&gt;A = Voltaje (voltios)&lt;/li&gt;&#xa;&lt;li&gt;B = Resistencia (ohmios)&lt;/li&gt;&#xa;&lt;li&gt;C = Corriente (amperios)&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;/html&gt;"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotIActionPerformed"/>
@@ -219,6 +222,7 @@
         <Component class="javax.swing.JButton" name="BotA">
           <Properties>
             <Property name="text" type="java.lang.String" value="A"/>
+            <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Calcular Cateto&lt;/b&gt;&#xa;&lt;ul&gt;&#xa;&lt;li&gt;A = Cateto A&lt;/li&gt;&#xa;&lt;li&gt;B = Cateto B&lt;/li&gt;&#xa;&lt;li&gt;C = Hipotenusa&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;/html&gt;"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotAActionPerformed"/>
@@ -232,6 +236,7 @@
         <Component class="javax.swing.JButton" name="BotB">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
+            <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Calcular Cateto&lt;/b&gt;&#xa;&lt;ul&gt;&#xa;&lt;li&gt;A = Cateto A&lt;/li&gt;&#xa;&lt;li&gt;B = Cateto B&lt;/li&gt;&#xa;&lt;li&gt;C = Hipotenusa&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;/html&gt;"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotBActionPerformed"/>
@@ -244,7 +249,8 @@
         </Component>
         <Component class="javax.swing.JButton" name="BotC">
           <Properties>
-            <Property name="text" type="java.lang.String" value="C"/>
+            <Property name="text" type="java.lang.String" value="H"/>
+            <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Calcular Hipotenusa&lt;/b&gt;&#xa;&lt;ul&gt;&#xa;&lt;li&gt;A = Cateto A&lt;/li&gt;&#xa;&lt;li&gt;B = Cateto B&lt;/li&gt;&#xa;&lt;li&gt;C = Hipotenusa&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;/html&gt;"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotCActionPerformed"/>
@@ -271,10 +277,10 @@
         <Component class="javax.swing.JLabel" name="UnidadA">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Liberation Sans" size="10" style="0"/>
+              <Font name="Liberation Sans" size="12" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="a"/>
+            <Property name="text" type="java.lang.String" value="..."/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
@@ -285,10 +291,10 @@
         <Component class="javax.swing.JLabel" name="UnidadB">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Liberation Sans" size="10" style="0"/>
+              <Font name="Liberation Sans" size="12" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="b"/>
+            <Property name="text" type="java.lang.String" value="..."/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
@@ -299,10 +305,10 @@
         <Component class="javax.swing.JLabel" name="UnidadC">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Liberation Sans" size="10" style="0"/>
+              <Font name="Liberation Sans" size="12" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="c"/>
+            <Property name="text" type="java.lang.String" value="..."/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
@@ -337,7 +343,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-              <GridBagConstraints gridX="0" gridY="7" gridWidth="7" gridHeight="1" fill="2" ipadX="0" ipadY="0" insetsTop="8" insetsLeft="2" insetsBottom="2" insetsRight="2" anchor="10" weightX="0.0" weightY="0.0"/>
+              <GridBagConstraints gridX="0" gridY="7" gridWidth="7" gridHeight="1" fill="2" ipadX="0" ipadY="0" insetsTop="8" insetsLeft="2" insetsBottom="0" insetsRight="2" anchor="10" weightX="0.0" weightY="0.0"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -2482,7 +2488,7 @@
             <CodeExpression id="154">
               <ExpressionOrigin>
                 <Value type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-                  <Insets value="[8, 2, 2, 2]"/>
+                  <Insets value="[8, 2, 0, 2]"/>
                 </Value>
               </ExpressionOrigin>
             </CodeExpression>
