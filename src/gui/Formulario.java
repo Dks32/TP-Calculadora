@@ -333,7 +333,7 @@ public class Formulario extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Liberation Mono", 0, 10)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("TAS - Programacion III - Ismael Tolaba");
+        jLabel1.setText("TAS - Programacion III - Ismael Tolaba (2023)");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
