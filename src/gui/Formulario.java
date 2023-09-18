@@ -4,6 +4,8 @@
  */
 package gui;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author alejandro
@@ -15,6 +17,7 @@ public class Formulario extends javax.swing.JFrame {
      */
     public Formulario() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("/assets/igual_128.png")).getImage());
     }
 
     /**
@@ -333,6 +336,7 @@ public class Formulario extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Liberation Mono", 0, 10)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/igual_16.png"))); // NOI18N
         jLabel1.setText("TAS - Programacion III - Ismael Tolaba (2023)");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
